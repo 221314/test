@@ -1,0 +1,17 @@
+git 사용자 내용 추가하기
+git config --global user.name NICKNAME
+git config --global user.email ID@EMAIL.COM
+git config --global --list	# user. 확인하기
+
+git init	#초기화(≒새로고침)
+
+git remote add origin https://gitbub.com/ID/FILENAME	#업로드할 Repositories(저장소) 지정
+
+git remote -v	#remote : 원격
+
+cat *.txt
+
+git add .
+git commit -m "sample"	# =readme
+
+git push origin master	# 파일은 이미 지정되었기때문에 사용자를 지정함
