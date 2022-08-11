@@ -1,3 +1,8 @@
+//https://www.anycodings.com/1questions/183153/getting-post-values-on-php-using-curl-on-c
+//https://gist.github.com/alghanmi/c5d7b761b2c9ab199157
+//https://nagy.tistory.com/13
+//https://curl.se/libcurl/c/postit2.html
+
 #include <iostream>
 //#include "json/json.h"
 #include <curl/curl.h>
