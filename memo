@@ -1,0 +1,31 @@
+#https://github.com/ultralytics/yolov5
+#python3 detect.py --source http://192.168.1.179:8080/?action=stream --weights /home/raspi/best.pt
+
+import sys
+import urllib.request
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
+from PyQt5 import uic
+
+form_class = uic.loadUiType('mw.ui')[0]
+
+class MyWindow(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+   #     self.pushButton.clicked.connect(self.buttonClicked)
+
+    #def buttonClicked(self):
+        self.lbl = QLabel(self)
+        self.lbl.resize(800,600)
+        pixmap = QPixmap("3.jpg")
+        self.lbl.setPixmap(pixmap)
+
+        #self.resize(400,400)
+        self.show()
+
+if __name__ =='__main__':
+    app = QApplication(sys.argv)
+    mywindow = MyWindow()
+    mywindow.show()
+    app.exec_()
